@@ -1,4 +1,82 @@
-# Angularecomm
+### json-server
+
+[![Node.js CI](https://github.com/typicode/json-server/actions/workflows/node.js.yml/badge.svg)](https://github.com/typicode/json-server/actions/workflows/node.js.yml)
+
+> [!IMPORTANT]
+> Viewing beta v1 documentation – usable but expect breaking changes. For stable version, see [here](https://github.com/typicode/json-server/tree/v0)
+
+👋 _Hey! Using React, Vue or Astro? Check my new project [MistCSS](https://github.com/typicode/mistcss) to write 50% less code._
+
+### Install
+
+```shell
+npm install json-server
+```
+
+# Usage
+
+Create a `db.json` or `db.json5` file
+
+```json
+{
+  "posts": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+```
+
+<details>
+
+<summary>View db.json5 example</summary>
+
+```json5
+{
+  posts: [
+    { id: '1', title: 'a title', views: 100 },
+    { id: '2', title: 'another title', views: 200 },
+  ],
+  comments: [
+    { id: '1', text: 'a comment about post 1', postId: '1' },
+    { id: '2', text: 'another comment about post 1', postId: '1' },
+  ],
+  profile: {
+    name: 'typicode',
+  },
+}
+```
+
+You can read more about JSON5 format [here](https://github.com/json5/json5).
+
+</details>
+
+Pass it to JSON Server CLI
+
+```shell
+$ npx json-server db.json
+```
+
+Get a REST API
+
+```shell
+$ curl http://localhost:3000/posts/1
+{
+  "id": "1",
+  "title": "a title",
+  "views": 100
+}
+```
+
+Run `json-server --help` for a list of options
+
+### Angularecom
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
