@@ -75,7 +75,8 @@ $ curl http://localhost:3000/posts/1
 
 Run `json-server --help` for a list of options
 
-### Angularecom
+### angular-ecommerce-app
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
